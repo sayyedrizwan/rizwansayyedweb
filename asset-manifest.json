@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rizwansayyedweb/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/rizwansayyedweb/static/js/main.447bd19d.chunk.js",
+    "main.js.map": "/rizwansayyedweb/static/js/main.447bd19d.chunk.js.map",
+    "runtime-main.js": "/rizwansayyedweb/static/js/runtime-main.c5329ae4.js",
+    "runtime-main.js.map": "/rizwansayyedweb/static/js/runtime-main.c5329ae4.js.map",
+    "static/js/2.7c0a4731.chunk.js": "/rizwansayyedweb/static/js/2.7c0a4731.chunk.js",
+    "static/js/2.7c0a4731.chunk.js.map": "/rizwansayyedweb/static/js/2.7c0a4731.chunk.js.map",
+    "static/js/3.6f073ad8.chunk.js": "/rizwansayyedweb/static/js/3.6f073ad8.chunk.js",
+    "static/js/3.6f073ad8.chunk.js.map": "/rizwansayyedweb/static/js/3.6f073ad8.chunk.js.map",
+    "index.html": "/rizwansayyedweb/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/rizwansayyedweb/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.7c0a4731.chunk.js.LICENSE.txt": "/rizwansayyedweb/static/js/2.7c0a4731.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/rizwansayyedweb/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5329ae4.js",
+    "static/js/2.7c0a4731.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.447bd19d.chunk.js"
+  ]
+}
