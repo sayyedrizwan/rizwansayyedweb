@@ -6,9 +6,14 @@ import GitHub from './imgs/github.svg';
 import Linkedin from './imgs/linkedin.svg';
 import Instagram from './imgs/instagram.svg';
 import Gmail from './imgs/gmail.svg';
+import RightArrow from './imgs/rightarrow.svg';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useEffect } from 'react';
 
 function App() {
+	useEffect(() => {
+		document.getElementById('androidslider').scrollLeft = 0;
+	}, []);
 	return (
 		<div className="App">
 			<div className="topheader">
@@ -68,14 +73,28 @@ function App() {
 				</div>
 			</div>
 			<br />
-			<div>
+			<div style={{ position: 'relative' }}>
 				<h3 className="mainText" style={{ margin: '15px' }}>
 					Experience
 				</h3>
 				<h5 className="submainText" style={{ marginLeft: '15px', transform: 'translate(-0px, -6px)' }}>
 					Android Development
 				</h5>
-
+				<div
+					className="shadow"
+					style={{
+						position: 'absolute',
+						right: '5px',
+						zIndex: '10',
+						top: '45%',
+						backgroundColor: 'black',
+						borderRadius: '50%',
+						cursor: 'pointer'
+					}}
+					onClick={(e) => sliderAppItem(e)}
+				>
+					<img src={RightArrow} alt="arrow" style={{ width: '25px', margin: '10px' }} />
+				</div>
 				<div className="horizantal_slider animsBottom" id="androidslider">
 					<div className="slider_container">
 						<div className="slideritem itemtrans" style={{ marginLeft: '42px' }}>
@@ -286,6 +305,130 @@ function App() {
 								&nbsp; Toofan Khabre (Java)
 							</h6>
 						</div>
+						<div className="slideritem" style={{ marginLeft: '52px' }}>
+							<div className="androiddev">
+								<center>
+									<br />
+									<br />
+									<br />
+									<img
+										src="https://play-lh.googleusercontent.com/F7bPJ8Py8SDaZ4pQ9xEwaTLQYjRJWoWd4wB-npUEo2QQgrw308PId_EKqR1PMACXd6Cz=s180"
+										style={{ width: '80px', alignItems: 'center', borderRadius: '7px' }}
+										alt="Fashions Mega"
+									/>
+									<br />
+									<div className="showData">
+										<br />
+										<p>
+											Fashions Mega is a <br />e-commerce app.<br />
+											<br />Similar: Amazon, <br /> Flipkart.
+											<br />
+										</p>
+
+										<br />
+										<br />
+										<button
+											type="button"
+											class="btn btn-danger"
+											onClick={(e) =>
+												appredirect(
+													e,
+													'https://play.google.com/store/apps/details?id=com.fashionsmega.android'
+												)}
+										>
+											View on Play Store
+										</button>
+										<br />
+									</div>
+								</center>
+							</div>
+
+							<h6 className="submainText" style={{ marginTop: '5px' }}>
+								&nbsp; Fashions Mega (Java)
+							</h6>
+						</div>
+						<div className="slideritem" style={{ marginLeft: '52px' }}>
+							<div className="androiddev">
+								<center>
+									<br />
+									<br />
+									<br />
+									<img
+										src="https://play-lh.googleusercontent.com/z5CFTc9OvU9ic6-mEI0XT2bUyqac7FkZQfIsyqkLnHNPOPY2oB57i6Fkabb9prWfp3Q=s180"
+										style={{ width: '80px', alignItems: 'center', borderRadius: '7px' }}
+										alt="Fashions Mega"
+									/>
+									<br />
+									<div className="showData">
+										<br />
+										<p>
+											Fashions Mega <br />Business is a <br />online business app.<br />
+											<br />Similar: Amazon Seller, <br /> AmazonDistribution.
+											<br />
+										</p>
+
+										<br />
+										<button
+											type="button"
+											class="btn btn-danger"
+											onClick={(e) =>
+												appredirect(
+													e,
+													'https://play.google.com/store/apps/details?id=com.fashionsmegabusiness.android'
+												)}
+										>
+											View on Play Store
+										</button>
+										<br />
+									</div>
+								</center>
+							</div>
+
+							<h6 className="submainText" style={{ marginTop: '5px' }}>
+								&nbsp; FashionsMega Business (Java)
+							</h6>
+						</div>
+						<div className="slideritem invisible" style={{ marginLeft: '52px' }}>
+							<div className="androiddev">
+								<center>
+									<br />
+									<br />
+									<br />
+									<img
+										src="https://play-lh.googleusercontent.com/z5CFTc9OvU9ic6-mEI0XT2bUyqac7FkZQfIsyqkLnHNPOPY2oB57i6Fkabb9prWfp3Q=s180"
+										style={{ width: '80px', alignItems: 'center', borderRadius: '7px' }}
+										alt="Fashions Mega"
+									/>
+									<br />
+									<div className="showData">
+										<br />
+										<p>
+											Fashions Mega <br />Business is a <br />online business app.<br />
+											<br />Similar: Amazon Seller, <br /> AmazonDistribution.
+											<br />
+										</p>
+
+										<br />
+										<button
+											type="button"
+											class="btn btn-danger"
+											onClick={(e) =>
+												appredirect(
+													e,
+													'https://play.google.com/store/apps/details?id=com.fashionsmegabusiness.android'
+												)}
+										>
+											View on Play Store
+										</button>
+										<br />
+									</div>
+								</center>
+							</div>
+
+							<h6 className="submainText" style={{ marginTop: '5px' }}>
+								&nbsp; FashionsMega Business (Java)
+							</h6>
+						</div>
 					</div>
 				</div>
 
@@ -490,9 +633,9 @@ function copiedToast(e) {
 	}, 4000);
 }
 
-function sliderItem(e) {
+function sliderAppItem(e) {
 	e.preventDefault();
-	document.getElementById('androidslider').scrollLeft += 50;
+	document.getElementById('androidslider').scrollLeft += 150;
 }
 
 function appredirect(e, where) {

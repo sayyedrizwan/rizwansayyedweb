@@ -2,7 +2,7 @@
   "name": "RizwanSayyed",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sayyedrizwan.github.io/rizwansayyedweb",
+  "homepage": "https://sayyedrizwan.github.io/rizwansayyedweb/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",

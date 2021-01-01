@@ -236,3 +236,7 @@
   from {right: 0; opacity: 0;}
   to {right: -500px; opacity: 1;}
 }
+
+.invisible{
+  visibility: hidden;
+}
