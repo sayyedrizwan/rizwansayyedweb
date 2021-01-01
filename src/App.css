@@ -1,6 +1,19 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'AvertaBold';
+  src: local('AvertaBold'), url(./fonts/avertab.ttf) format('truetype');
 }
+
+
+@font-face {
+  font-family: 'Lovelo';
+  src: local('Lovelo'), url(./fonts/lovelo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoeui';
+  src: local('Segoeui'), url(./fonts/segoeui.ttf) format('truetype');
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +48,191 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.maintoptxt{
+  font-family: AvertaBold,Helvetica,sans-serif;
+  font-size: 5.8vw;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.topsTitle{
+  transform: translate(-80px, -34px);
+}
+
+
+.topsTitleImg{
+  transform: translate(-80px, -34px);
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.icondiv{
+  position: absolute;
+  bottom: 15px;
+  margin: 20px;
+  display: flex;
+}
+.profilediv{
+  margin: 10px;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  transition: all 0.6s;
+}
+
+.iconSize{
+  width: 35px;
+  height: 35px;
+}
+
+.animsBottom{
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed; 
+  z-index: 100;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+.profilediv:hover{
+  background-color: black;
+  transition: all 0.6s;
+}
+
+.topheader{
+  height: 95vh;
+  background: #ff6961;
+  position: relative;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.mainText{
+  font-family: 'Lovelo', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+
+.submainText{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+.submainsmallText{
+  font-family:'Segoeui', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+
+.horizantal_slider{
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.horizantal_slider::-webkit-scrollbar{
+  display: none;
+}
+
+
+.horizantal_slider{
+  -ms-overflow-style: none;
+}
+
+.slider_container{
+  display: block;
+  white-space: nowrap;
+}
+
+
+.slideritem{
+  display: inline-block;
+  margin: 10px; 
+}
+
+.androiddev{
+  border-radius: 8px;
+  height: 265px;
+  width: 175px;
+  background-color: #c5d5cb;
+  position: relative;
+  transition: all 0.6s;
+  -webkit-animation: fadeinItems 0.5s;
+  animation: fadeinItems 0.5s;
+}
+
+.showData{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top : 5px;
+  left: 1px;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 7px;
+  padding: 8px;
+  color: whitesmoke;
+  font-family:'Segoeui', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.androiddev:hover .showData{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+@-webkit-keyframes fadeinItems {
+  from {right: 0; opacity: 0;}
+  to {right: 500px; opacity: 1;}
+}
+
+@keyframes fadeinItems {
+  from {right: 0; opacity: 0;}
+  to {right: -500px; opacity: 1;}
 }
