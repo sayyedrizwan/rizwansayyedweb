@@ -4,6 +4,9 @@
 
 <br/>
 
+
+<h4><b>To view the whole Website, <a href="https://sayyedrizwan.github.io/rizwansayyedweb/">Click HERE</a>.</b></h4> 
+
 ## Contribute
 
 Contributions are always welcome! 😊

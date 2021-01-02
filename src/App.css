@@ -78,6 +78,7 @@
   margin: 20px;
   display: flex;
 }
+
 .profilediv{
   margin: 10px;
   padding: 8px;
@@ -157,6 +158,11 @@
 }
 
 
+.aboutText{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
 .submainText{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: black;
@@ -173,6 +179,7 @@
   width: 100%;
   overflow-x: scroll;
   overflow: hidden;
+  behavior: 'smooth';
   box-sizing: border-box;
 }
 
@@ -239,4 +246,20 @@
 
 .invisible{
   visibility: hidden;
+}
+
+.githubRepoCard{
+  border-style: solid;
+  border-color: #282c34;
+  position: relative;
+  border-width: 1px;
+  width: 650px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+.githubRepoCard:hover{
+  background-color: rgba(235, 0, 0, 0.178);
+  transition: all 0.6s;
 }
