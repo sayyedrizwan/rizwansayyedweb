@@ -259,7 +259,66 @@
 }
 
 
+.profilered{
+  border-style: solid;
+  border-color: #282c34;
+  position: relative;
+  border-width: 1px;
+  padding-top: 12px;
+  border-radius: 5px;
+  width: 380px;
+  cursor: pointer;
+}
+
+
+.profilered:hover{
+  background-color: #8a3ab9;
+  transition: all 0.6s;
+  color: whitesmoke;
+}
+
+
 .githubRepoCard:hover{
   background-color: rgba(235, 0, 0, 0.178);
   transition: all 0.6s;
+}
+
+.cardInstagram{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 85%;
+  background-color: #fafafa;
+}
+
+
+.cardInstagram:hover{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.containerInstagram{
+  padding: 10px;
+}
+
+.gridcard {
+  background-color: rgba(30, 143, 255, 0.726);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gridcards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.centerCrop{
+  border-radius: 3%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
