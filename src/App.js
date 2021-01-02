@@ -73,6 +73,15 @@ function App() {
 				</div>
 			</div>
 			<br />
+
+			<div>
+				<center>
+					<h3 className="mainText">
+						ABOUT ME
+					</h3>
+				</center>
+			</div>
+
 			<div style={{ position: 'relative' }}>
 				<h3 className="mainText" style={{ margin: '15px' }}>
 					Experience
@@ -305,6 +314,48 @@ function App() {
 								&nbsp; Toofan Khabre (Java)
 							</h6>
 						</div>
+
+						<div className="slideritem" style={{ marginLeft: '52px' }}>
+							<div className="androiddev">
+								<center>
+									<br />
+									<br />
+									<br />
+									<img
+										src="https://play-lh.googleusercontent.com/z5CFTc9OvU9ic6-mEI0XT2bUyqac7FkZQfIsyqkLnHNPOPY2oB57i6Fkabb9prWfp3Q=s180"
+										style={{ width: '80px', alignItems: 'center', borderRadius: '7px' }}
+										alt="Fashions Mega"
+									/>
+									<br />
+									<div className="showData">
+										<br />
+										<p>
+											Fashions Mega <br />Business is a <br />online business app.<br />
+											<br />Similar: Amazon Seller, <br /> AmazonDistribution.
+											<br />
+										</p>
+
+										<br />
+										<button
+											type="button"
+											class="btn btn-danger"
+											onClick={(e) =>
+												appredirect(
+													e,
+													'https://play.google.com/store/apps/details?id=com.fashionsmegabusiness.android'
+												)}
+										>
+											View on Play Store
+										</button>
+										<br />
+									</div>
+								</center>
+							</div>
+
+							<h6 className="submainText" style={{ marginTop: '5px' }}>
+								&nbsp; FashionsMega Business (Java)
+							</h6>
+						</div>
 						<div className="slideritem" style={{ marginLeft: '52px' }}>
 							<div className="androiddev">
 								<center>
@@ -345,47 +396,6 @@ function App() {
 
 							<h6 className="submainText" style={{ marginTop: '5px' }}>
 								&nbsp; Fashions Mega (Java)
-							</h6>
-						</div>
-						<div className="slideritem" style={{ marginLeft: '52px' }}>
-							<div className="androiddev">
-								<center>
-									<br />
-									<br />
-									<br />
-									<img
-										src="https://play-lh.googleusercontent.com/z5CFTc9OvU9ic6-mEI0XT2bUyqac7FkZQfIsyqkLnHNPOPY2oB57i6Fkabb9prWfp3Q=s180"
-										style={{ width: '80px', alignItems: 'center', borderRadius: '7px' }}
-										alt="Fashions Mega"
-									/>
-									<br />
-									<div className="showData">
-										<br />
-										<p>
-											Fashions Mega <br />Business is a <br />online business app.<br />
-											<br />Similar: Amazon Seller, <br /> AmazonDistribution.
-											<br />
-										</p>
-
-										<br />
-										<button
-											type="button"
-											class="btn btn-danger"
-											onClick={(e) =>
-												appredirect(
-													e,
-													'https://play.google.com/store/apps/details?id=com.fashionsmegabusiness.android'
-												)}
-										>
-											View on Play Store
-										</button>
-										<br />
-									</div>
-								</center>
-							</div>
-
-							<h6 className="submainText" style={{ marginTop: '5px' }}>
-								&nbsp; FashionsMega Business (Java)
 							</h6>
 						</div>
 						<div className="slideritem invisible" style={{ marginLeft: '52px' }}>
