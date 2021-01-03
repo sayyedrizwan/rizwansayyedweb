@@ -11,6 +11,7 @@ import InstaIcon from './imgs/instagramicons.svg';
 import LikeIcon from './imgs/heart.svg';
 import CommentIcon from './imgs/commenticon.svg';
 import LocationIcon from './imgs/locations.svg';
+// eslint-disable-next-line
 import InstagramJson from './json/instagram.json';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useEffect, useState } from 'react';
@@ -46,10 +47,9 @@ function App() {
 				.catch((err) => {
 					console.log(err);
 				});
-		//	setinstaPosts(InstagramJson.graphql.user.edge_owner_to_timeline_media.edges);
+			//	setinstaPosts(InstagramJson.graphql.user.edge_owner_to_timeline_media.edges);
 			//setinstaPostsCount(InstagramJson.graphql.user.edge_owner_to_timeline_media.count);
 
-				
 			axios
 				.get('https://www.instagram.com/rizwansayyeddev/?__a=1')
 				.then((res) => {
@@ -1053,6 +1053,7 @@ function App() {
 						<div className="gridcards">
 							{instaPosts.map((instagram) => (
 								<div
+									key={instagram.node.id}
 									className="gridcard"
 									style={{ position: 'relative' }}
 									onClick={(e) =>
