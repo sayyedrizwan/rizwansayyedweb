@@ -342,3 +342,22 @@
   font-family: 'Averta', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 10px;
 }
+
+.mobileview{
+  display: none;
+}
+
+
+.topsTitleImgPhone{
+  transform: translate(0px, 0px);
+}
+
+@media screen and (max-width: 950px) {
+    
+  .mobileview{
+    display: block;
+  }
+  .desktopview{
+    display: none;
+  }
+}
