@@ -53,10 +53,8 @@ function App() {
 			axios
 				.get('https://www.instagram.com/rizwansayyeddev/?__a=1')
 				.then((res) => {
-					console.log(res.data)
 					setinstaPosts(res.data.graphql.user.edge_owner_to_timeline_media.edges);
 					setinstaPostsCount(res.data.graphql.user.edge_owner_to_timeline_media.count);
-					console.log(res.data.graphql.user.edge_owner_to_timeline_media.edges);
 				})
 				.catch((err) => {
 					console.log(err);
