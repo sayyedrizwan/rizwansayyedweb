@@ -10,6 +10,7 @@ import RightArrow from './imgs/rightarrow.svg';
 import InstaIcon from './imgs/instagramicons.svg';
 import LikeIcon from './imgs/heart.svg';
 import CommentIcon from './imgs/commenticon.svg';
+import LocationIcon from './imgs/locations.svg';
 import InstagramJson from './json/instagram.json';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useEffect, useState } from 'react';
@@ -45,12 +46,10 @@ function App() {
 				.catch((err) => {
 					console.log(err);
 				});
-			console.log(InstagramJson);
-			setinstaPosts(InstagramJson.graphql.user.edge_owner_to_timeline_media.edges);
-			setinstaPostsCount(InstagramJson.graphql.user.edge_owner_to_timeline_media.count);
-			console.log(InstagramJson.graphql.user.edge_owner_to_timeline_media.edges);
+		//	setinstaPosts(InstagramJson.graphql.user.edge_owner_to_timeline_media.edges);
+			//setinstaPostsCount(InstagramJson.graphql.user.edge_owner_to_timeline_media.count);
 
-			/*
+				
 			axios
 				.get('https://www.instagram.com/rizwansayyeddev/?__a=1')
 				.then((res) => {
@@ -61,7 +60,7 @@ function App() {
 				})
 				.catch((err) => {
 					console.log(err);
-				});*/
+				});
 		},
 		[ gitRepo.length ]
 	);
@@ -128,7 +127,7 @@ function App() {
 			<div>
 				<center>
 					<h3 className="mainText">ABOUT ME</h3>
-					<p className="submainsmallText">I'm more of a love to create something new.</p>
+					<p className="submainsmallText">I love to discover and build something new.</p>
 				</center>
 			</div>
 			<br />
@@ -1114,9 +1113,11 @@ function App() {
 							))}
 						</div>
 						<center>
-							<br/>
-							<div className="profilered" onClick={(e) =>
-										appredirect(e, 'https://www.instagram.com/rizwansayyeddev/')}>
+							<br />
+							<div
+								className="profilered"
+								onClick={(e) => appredirect(e, 'https://www.instagram.com/rizwansayyeddev/')}
+							>
 								<p>View Instagram Profile</p>
 							</div>
 						</center>
@@ -1125,7 +1126,27 @@ function App() {
 			</center>
 			<br />
 			<br />
+
 			<div id="snackbar"> Email Address copied successfully. 😊</div>
+
+			<div className="footer">
+				<br />
+				<center style={{ marginTop: '20px' }}>
+					<img
+						src={LocationIcon}
+						alt="gpsicon"
+						style={{ width: '21px', transform: 'translate(0px, -4px)' }}
+					/>
+					Colaba, India
+					<p style={{ marginTop: '20px' }}>
+						Made by Love with <a href="https://reactjs.org/">ReactJS</a>.{' '}
+					</p>
+					<p className="mainTextWhite" style={{ marginTop: '40px' }}>
+						&#169; {new Date().getFullYear()} Rizwan Sayyed | rizwansayyed.ml
+					</p>
+				</center>
+				<br />
+			</div>
 		</div>
 	);
 }
