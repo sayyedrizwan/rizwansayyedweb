@@ -191,7 +191,7 @@
   width: 100%;
   overflow-x: scroll;
   overflow: hidden;
-  behavior: 'smooth';
+  behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -268,6 +268,21 @@
   width: 650px;
   padding: 15px;
   border-radius: 5px;
+}
+
+
+.githubRepoCardMobile{
+  border-style: solid;
+  border-color: #282c34;
+  position: relative;
+  border-width: 1px;
+  width: 230px;
+  padding: 15px;
+  word-wrap: break-word;
+  border-radius: 5px;
+  word-wrap: break-word;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 
@@ -360,4 +375,15 @@
   .desktopview{
     display: none;
   }
+
+    
+  .horizantal_slider{
+    overflow: auto;
+  }
+
+    
+  .profilered{
+    width: 250px;
+  } 
+
 }
